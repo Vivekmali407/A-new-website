@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2vw 4vw;
+    border: 2px solid #dadada ;
+}
+.nav-part2{
+    display: flex;
+    /* background-color: wheat; */
+    gap: 4vw;
+    align-items: center;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.nav h4{
+    font-size: 1.3vw;
+
+}
+.nav i{
+    font-size: 1.3vw;
+    font-weight: 700;
+    display: none;
+}
+.nav-part2 button{
+    font-size: 1.2vw ;
+    padding: 0.6vw 1.8vw;
+    font-weight: 700;
+    color: white;
+    background-color: lightseagreen;
+    border: 1px solid ;
+    border-radius: 2px;
+    font-weight: 500 ;
+
+
+}
+.nav-part2 button span{
+    font-size: 1.2vw;
+}
+
+@media (max-width:600px) {
+    .nav{
+        height: 60px;
+        padding: 0 6vw;
+
+    }
+    .nav h2{
+        font-size: 4.1vw;
+    
+    }
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav i{
+        font-size: 4.5vw;
+        display: initial;
+    }
+    .nav-part2 button{
+        display: none;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .left h1{
+        font-size: 10vw;
+        
+    }
+   
+
+
+}
+
+.content{
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+    position: relative;
+} 
+
+.left{
+    height: 100%;
+    width: 55%;
+    /* background-color: crimson; */
+    padding: 5vw 5vw;
+
+
+}
+.left h1 {
+    font-size: 4.6vw;
+    font-weight: 600;
+    line-height: 4.8vw;
+}
+.left h1 span{
+    color: orange;
+
+}
+.left p{
+    font-size:1.3vw ;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+.content button{
+    font-size: 1.3vw ;
+    padding: 0.8vw 1.8vw;
+    color: rgb(81, 72, 5);
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 500 ;
+    
+}
+.content img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+    /* background-color: royalblue; */
+}
