@@ -8,6 +8,8 @@
 html, body{
     height: 100%;
     width: 100%;
+    background-color: black;
+    
 
 }
 .main{
@@ -23,20 +25,28 @@ html, body{
     align-items: center;
     justify-content: space-between;
     padding: 1.2vw 4vw;
-    border-bottom: 2px solid #dadada ;
+    border-bottom: 2px solid #ffffff ;
+    color: rgb(255, 8, 0);
+
 }
 .nav-part2{
     display: flex;
     /* background-color: wheat; */
     gap: 4vw;
     align-items: center;
+    
 }
 .nav h2{
     font-size: 2vw;
     font-weight: 700;
 }
+.nav h2 span{
+    color: #ffffff;
+}
 .nav h4{
     font-size: 1.3vw;
+    color: #ffffff;
+    
 
 }
 .nav i{
@@ -50,7 +60,7 @@ html, body{
     font-weight: 700;
     color: rgb(255, 255, 255);
     background-color: rgb(180, 12, 12);
-    border: 1px solid ;
+    border: 1px solid black;
     border-radius: 2px;
     font-weight: 500 ;
 
@@ -67,6 +77,8 @@ html, body{
     width: 100%;
     display: flex;
     position: relative;
+    font-weight: 700;
+
 } 
 
 .left{
@@ -81,17 +93,18 @@ html, body{
     font-size: 4.6vw;
     font-weight: 600;
     line-height: 4.8vw;
+    color: rgb(253, 255, 255);
 
 }
 .left h1 span{
-    color: rgb(191, 6, 6);
+    color: rgb(244, 13, 13);
 
 }
 .left p{
     font-size:1.3vw ;
     font-weight: 600;
-    color: rgb(129, 11, 11);
-    width: 80%;
+    color: rgb(255, 255, 255);
+    width: 85%;
     margin-top: 3vw;
     margin-bottom: 4vw;
 }
@@ -116,9 +129,16 @@ html, body{
     height: 100%;
     width: 45%;
     /* background-color: royalblue; */
+
+}
+.right img{
+    display: flex;
+    margin-top: 2vw;
 }
 
+
 @media (max-width:600px) {
+   
     .nav{
         height: 60px;
         padding: 0 6vw;
@@ -152,17 +172,21 @@ html, body{
     .left p{
         font-size: 3vw;
         width: 90%;
-        margin-top: 5vw;
+        margin-top: 6vw;
+        line-height: 4vw;
         margin-bottom: 3vw;
-        color: rgb(51, 51, 52);
+        color: rgb(252, 252, 255);
     }
     .right{
         width: 100%;
         height: 55%;
     }
+    .right img{
+        width: 70vw;
+    }
     .left h1{
         font-size: 11vw;
-        line-height: 11vw;
+        line-height: 10vw;
         
         
     }
@@ -171,8 +195,9 @@ html, body{
         color: rgb(255, 255, 255);
         font-weight: 600;
         border: none;
-        padding: 1.5vw 3vw;
+        padding: 2vw 3vw;
     }
+    
 
 
 }
